@@ -1,0 +1,10 @@
+{
+  "id": "kountry-kart",
+  "name": "Kountry Kart Deli",
+  "address": "155 Main St,",
+  "lat": 44.4757719,
+  "lon": -73.2129392,
+  "phoneNumber": "802-864-4408",
+  "hours": "6:30 am - 8:00 pm",
+  "notes": ["Breakfast all Day!", "Great subs"]
+}

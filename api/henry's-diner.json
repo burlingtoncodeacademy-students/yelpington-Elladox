@@ -1,0 +1,10 @@
+{
+    "id": "henry's-diner",
+    "name": "Henry's Diner",
+    "address": "155 Bank St",
+    "lat": 44.478007399999996,
+    "lon": -73.21351552613982,
+    "phoneNumber": "802-862-9010",
+    "hours": "6:00 am - 2:00 pm",
+    "notes": ["Try the Skillets!."]
+  }

@@ -1,0 +1,10 @@
+{
+    "id": "el-cortijo",
+    "name": "El Cortijo",
+    "address": " 189 Bank St",
+    "lat": 44.4780989,
+    "lon": -73.2120088,
+    "phoneNumber": "802-497-1668",
+    "hours": "4:00pm - 10:00pm",
+    "notes": ["Great Tacos!"]
+  }

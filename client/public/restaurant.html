@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="restaurant">
+      <h2 id="name"></h2>
+      <p id="address"></p>
+      <p id="phoneNumber"></p>
+      <p id="hours"></p>
+      <p id="notes"></p>
+    </div>
+    <script>
+      let restaurantId = document.location.pathname.split("/").splice(-1);
+      
+      fetch("/api/" + restaurantId)
+        .then((response) => response.json())
+      
+        .then(fillRestaurant);
+
+      function fillRestaurant(restaurant) {
+      
+        
+        document.getElementById("name").textContent = restaurant.name;
+        document.getElementById("address").textContent = restaurant.address;
+        document.getElementById("phoneNumber").textContent =
+          restaurant.phoneNumber;
+        document.getElementById("hours").textContent = restaurant.hours;
+        document.getElementById("notes").textContent = restaurant.notes;
+      }
+    </script>
+  </body>
+</html>

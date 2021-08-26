@@ -8,7 +8,7 @@ function Navbar(props) {
       <div id="navLinks">
           {/* each link send the user to the specified path */}
         <NavLink activeClassName="active" exact to="/">
-            {/* If I had more Time I could have likely set this up programmatically by mapping over all of the restaurant's info after fetching it */}
+           {/* active classname helps with styling for the link that was clicked last */}
           <h3 className="navContent">Home</h3>
         </NavLink>
         <NavLink activeClassName="active" to="/restaurants/asiana">

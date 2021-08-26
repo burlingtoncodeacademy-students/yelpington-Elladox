@@ -2,16 +2,9 @@ import "./App.css";
 import React from "react";
 import { Switch, Route, BrowserRouter } from "react-router-dom";
 import Home from "./components/Home";
-import Asiana from "./components/Asiana";
-import HenrysDiner from "./components/Henry's-diner";
-import ElCortijo from "./components/El-cortijo";
-import Farmhouse from "./components/Farmhouse";
-import KountryKart from "./components/Kountry-kart";
-import SherpaKitchen from "./components/Sherpa-kitchen";
-import SkinnyPancake from "./components/Skinny-pancake";
-import ManhattanPizza from "./components/ManhattanPizza";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
+import Restaurant from "./components/Restaurant";
 
 function App() {
   return (
@@ -28,16 +21,65 @@ function App() {
           {/* use exact path for the home page */}
           <Route exact path="/" component={Home} />
           {/* paths for all the other restaurants */}
-          <Route path="/restaurants/asiana" component={Asiana} />
-          <Route path="/restaurants/henry's-diner" component={HenrysDiner} />
-          <Route path="/restaurants/el-cortijo" component={ElCortijo} />
-          <Route path="/restaurants/farmhouse" component={Farmhouse} />
-          <Route path="/restaurants/kountry-kart" component={KountryKart} />
-          <Route path="/restaurants/sherpakitchen" component={SherpaKitchen} />
-          <Route path="/restaurants/skinny-pancake" component={SkinnyPancake} />
+          <Route path="/restaurants/asiana" component={() => {
+            return(
+              <div>
+                <Restaurant restaurantName="asiana" />
+              </div>
+            )
+          }} />
+          {/* component is passed the restaurants name as a prop, so it can fetch the appropriate data */}
+          <Route path="/restaurants/henry's-diner" component={() => {
+            return(
+              <div>
+                <Restaurant restaurantName="henry's-diner" />
+              </div>
+            )
+          }} />
+          <Route path="/restaurants/el-cortijo" component={() => {
+            return(
+              <div>
+                <Restaurant restaurantName="el-cortijo" />
+              </div>
+            )
+          }} />
+          <Route path="/restaurants/farmhouse" component={() => {
+            return(
+              <div>
+                <Restaurant restaurantName="farmhouse" />
+              </div>
+            )
+          }} />
+          <Route path="/restaurants/kountry-kart" component={() => {
+            return(
+              <div>
+                <Restaurant restaurantName="kountry-kart" />
+              </div>
+            )
+          }} />
+          <Route path="/restaurants/sherpa-kitchen" component={() => {
+            return(
+              <div>
+                <Restaurant restaurantName="sherpa-kitchen" />
+              </div>
+            )
+          }} />
+          <Route path="/restaurants/skinny-pancake" component={() => {
+            return(
+              <div>
+                <Restaurant restaurantName="skinny-pancake" />
+              </div>
+            )
+          }} />
           <Route
             path="/restaurants/manhattan-pizza"
-            component={ManhattanPizza}
+            component={() => {
+              return(
+                <div>
+                  <Restaurant restaurantName="manhattan-pizza" />
+                </div>
+              )
+            }}
           />
         </Switch>
       </div>

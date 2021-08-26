@@ -10,19 +10,22 @@ let DefaultIcon = L.icon({
   shadowUrl: iconShadow,
 });
 
-function Asiana(props) {
+function Restaurant(props) {
     /* set up state for all of the restaurant's info */
-  const [restaurantInfo, setRestaurantInfo] = useState("");
+  const [restaurantInfo, setRestaurantInfo] = useState({lat:44.4779367, lon:-73.2123951});
 
   useEffect(() => {
+      
       /* fetch the restaurant's info from the "database" */
-      /* if I had more time I could likely have set this up to programmatically fetch the restaurant's id rather than hardcoding it  */
-    fetch("/api/asiana")
+      /* uses the prop passed to it to fetch the correct restaurant depending on which marker was clicked */
+    fetch(`/api/${props.restaurantName}`)
       .then((res) => res.json())
       .then((obj) => {
           /* set the state of the restaurant info */
+          console.log(obj)
         setRestaurantInfo(obj);
       });
+      
   }, []);
 
   return (
@@ -37,19 +40,19 @@ function Asiana(props) {
       <MapContainer
         className="restaurantMap"
         center={[restaurantInfo.lat, restaurantInfo.lon]}
-        zoom={20}
+        zoom={16}
         style={{ height: "80vh" }}
       >
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         />
-        {/* marker of the the restaurant's locaiton */}
+        {/* marker of the the restaurant's location */}
         <Marker
           position={[restaurantInfo.lat, restaurantInfo.lon]}
           icon={DefaultIcon}
         >
-            {/* show the restauran's name when the marker is clicked */}
+            {/* show the restaurant's name when the marker is clicked */}
           <Popup>{restaurantInfo.name}</Popup>
         </Marker>
       </MapContainer>
@@ -57,4 +60,4 @@ function Asiana(props) {
   );
 }
 
-export default Asiana;
+export default Restaurant;

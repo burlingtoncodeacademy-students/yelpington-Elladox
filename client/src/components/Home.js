@@ -2,15 +2,18 @@ import HomeMap from "./HomeMap";
 import { useEffect, useState } from "react";
 function Home(props) {
   /* set up state for the index of restaurant ids */
-  const [restaurantsId, setRestaurantsID] = useState("");
+  const [restaurantsId, setRestaurantsID] = useState([]);
+  const [isData, setData] = useState(1);
   /* fetch the index from the "database" */
   useEffect(() => {
-    fetch("/api")
-      .then((res) => res.json())
-      .then((obj) => {
-        setRestaurantsID(obj);
-      });
-  }, []);
+    if (restaurantsId.length === 0) {
+      fetch("/api")
+        .then((res) => res.json())
+        .then((obj) => {
+          setRestaurantsID(obj);
+        });
+    }
+  });
 
   return (
     <div id="restaurantBody">

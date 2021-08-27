@@ -24,7 +24,7 @@ function App() {
           <Route path="/restaurants/asiana" component={() => {
             return(
               <div>
-                <Restaurant restaurantName="asiana" />
+                <Restaurant restaurantName="asiana" lat="44.4779367" lon="-73.2123951" />
               </div>
             )
           }} />
@@ -32,42 +32,42 @@ function App() {
           <Route path="/restaurants/henry's-diner" component={() => {
             return(
               <div>
-                <Restaurant restaurantName="henry's-diner" />
+                <Restaurant restaurantName="henry's-diner" lat="44.478007399999996" lon="-73.21351552613982"/>
               </div>
             )
           }} />
           <Route path="/restaurants/el-cortijo" component={() => {
             return(
               <div>
-                <Restaurant restaurantName="el-cortijo" />
+                <Restaurant restaurantName="el-cortijo" lat="44.4780989" lon="-73.2120088"/>
               </div>
             )
           }} />
           <Route path="/restaurants/farmhouse" component={() => {
             return(
               <div>
-                <Restaurant restaurantName="farmhouse" />
+                <Restaurant restaurantName="farmhouse" lat="44.47840574999999" lon="-73.21329562432919"/>
               </div>
             )
           }} />
           <Route path="/restaurants/kountry-kart" component={() => {
             return(
               <div>
-                <Restaurant restaurantName="kountry-kart" />
+                <Restaurant restaurantName="kountry-kart" lat="44.4757719" lon="-73.2129392"/>
               </div>
             )
           }} />
           <Route path="/restaurants/sherpa-kitchen" component={() => {
             return(
               <div>
-                <Restaurant restaurantName="sherpa-kitchen" />
+                <Restaurant restaurantName="sherpa-kitchen" lat=" 44.4768716" lon="-73.2151128"/>
               </div>
             )
           }} />
           <Route path="/restaurants/skinny-pancake" component={() => {
             return(
               <div>
-                <Restaurant restaurantName="skinny-pancake" />
+                <Restaurant restaurantName="skinny-pancake"lat="44.4770114" lon="-73.2195093" />
               </div>
             )
           }} />
@@ -76,7 +76,7 @@ function App() {
             component={() => {
               return(
                 <div>
-                  <Restaurant restaurantName="manhattan-pizza" />
+                  <Restaurant restaurantName="manhattan-pizza" lat=" 44.4757786" lon="-73.2126578"/>
                 </div>
               )
             }}

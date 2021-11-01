@@ -1,0 +1,10 @@
+{
+    "id": "skinny-pancake",
+    "name": "Skinny Pancake",
+    "address": "60 Lake St, Burlington",
+    "lat": 44.4770114,
+    "lon": -73.2195093,
+    "phoneNumber": "802",
+    "hours": "8:00am - 9:30pm",
+    "notes": ["Good Crepes"]
+  }

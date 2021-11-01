@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Header */
+
+#pageHead {
+  /* flexbox to make it easier to position */
+  display: flex;
+  height: 20vh;
+  flex-direction: column;
+  background-color: #333533;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#header {
+  display: flex;
+  height: 15vh;
+  width: 100vw;
+  font-size: 40px;
+  color: #ffd100;
+}
+/* NavBar */
+a {
+  text-decoration: none;
+}
+/* styling for general nav bar */
+#navContainer {
+  display: flex;
+  height: 5vh;
+  width: 100vw;
+  background-color: #202020;
+}
+/* styling for the boxes inside the nav bar */
+#navLinks {
+  display: flex;
+  justify-content: space-between;
+}
+/* styling the names of the restaurants */
+.navContent {
+  font-weight: bold;
+  justify-content: space-between;
+  color: #d6d6d6;
+}
+/* styling for active link */
+.active {
+  background-color: #ffee32;
+  color: #333533;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Restaurant pages */
+#restaurantBody {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #d6d6d6;
+  height: 80vh;
+  color: #202020;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.restaurantMap {
+  z-index: 1;
 }

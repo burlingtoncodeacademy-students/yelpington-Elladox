@@ -1,0 +1,10 @@
+{
+    "id": "sherpa-kitchen",
+    "name": "Sherpa Kitchen",
+    "address": "119 College St, Burlington",
+    "lat": 44.4768716,
+    "lon": -73.2151128,
+    "phoneNumber": "802-881-0550",
+    "hours": "11:00am - 9:00pm",
+    "notes": ["Good Curry!"]
+  }

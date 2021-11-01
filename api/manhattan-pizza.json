@@ -1,0 +1,10 @@
+{
+    "id": "manhattan-pizza",
+    "name": "Manhattan Pizza",
+    "address": "167 Main St, Burlington",
+    "lat": 44.4757786,
+    "lon": -73.2126578,
+    "phoneNumber": "802-658-6776",
+    "hours": "4:00pm - 10:00pm",
+    "notes": ["Massive slices!", "Open Late"]
+  }

@@ -1,0 +1,10 @@
+{
+    "id": "farmhouse",
+    "name": "Farmhouse Tap and Grill",
+    "address": "160 Bank St",
+    "lat": 44.47840574999999,
+    "lon": -73.21329562432919,
+    "phoneNumber": "802-859-0888",
+    "hours": "4:00pm - 11:00pm",
+    "notes": ["Great Deals on Appetizers!"]
+  }

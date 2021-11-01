@@ -1,0 +1,10 @@
+{
+    "id": "asiana",
+    "name": "Asiana Noodle Shop",
+    "address": "88 Church St",
+    "lat": 44.4779367,
+    "lon": -73.2123951,
+    "phoneNumber": "802-862-8828",
+    "hours": "11:30am - 10:00pm",
+    "notes": ["Best Noodles in Town!"]
+  }
